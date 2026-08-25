@@ -15,5 +15,5 @@ console.log("After update:", data);
 
 // DELETE the file
 fs.unlinkSync("demo.txt");
-
+//sb
 console.log("File deleted successfully.");
