@@ -1,0 +1,177 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 30px;
+}
+
+/* Main Portfolio Card */
+.portfolio {
+    width: 600px;
+    padding: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Main Heading */
+h1 {
+    color: #5a4fcf;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+/* Sub Heading */
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Paragraph */
+p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+
+/* ========================= */
+/* MAIN PROFILE IMAGE */
+/* ========================= */
+
+.portfolio > img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 5px solid #667eea;
+    transition: 0.4s;
+    margin-bottom: 20px;
+}
+/* Main Image Hover */
+.portfolio > img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #667eea;
+}
+
+/* ========================= */
+/* FAVORITE BOOKS SECTION */
+/* ========================= */
+
+.books {
+    margin-top: 30px;
+    padding: 25px;
+    background: #f3f1ff;
+    border-radius: 15px;
+}
+
+.books h2 {
+    color: #5a4fcf;
+    margin-bottom: 20px;
+}
+
+
+/* Book Images Side by Side */
+.book-images {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+/* Individual Book */
+.book-images div {
+    width: 180px;
+    text-align: center;
+}
+
+
+/* Book Image */
+.book-images img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #667eea;
+    transition: 0.4s;
+}
+
+
+/* Book Image Hover */
+.book-images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #667eea;
+}
+
+
+/* Book Name */
+.book-images p {
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: #555;
+    font-size: 14px;
+}
+
+
+/* ========================= */
+/* BUTTONS */
+/* ========================= */
+
+.buttons {
+    margin-top: 25px;
+}
+
+.buttons a {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 5px;
+    color: white;
+    background: #667eea;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+
+/* Button Hover */
+.buttons a:hover {
+    background: #764ba2;
+    transform: translateY(-3px);
+}
+
+
+/* ========================= */
+/* RESPONSIVE DESIGN */
+/* ========================= */
+
+@media (max-width: 600px) {
+
+    .portfolio {
+        width: 100%;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .book-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

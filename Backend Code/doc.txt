@@ -1,0 +1,6 @@
+code.-opne vs code editor
+git hub repo
+git bash-connect local N
+// write html code to create a web page that contain  
+heading my portpholio photograph 
+image clickaable link to your fav website 
